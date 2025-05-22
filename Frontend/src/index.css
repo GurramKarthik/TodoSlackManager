@@ -1,0 +1,214 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  transition: border-color 0.25s;
+  padding: 0.6em 1.2em;
+
+}
+
+
+
+.app{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+  position: relative;
+
+}
+
+.heading{
+  text-align: center;
+  padding-top: 6vh;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.homeBtn{
+  position: absolute;
+  right: 8vw;
+  top:3vh;
+  background-color: #1a1a1a;
+  color: #fff;
+  transition-duration: 1ms;
+  transition-property: all;
+  transition-timing-function: linear;
+  
+}
+
+.homeBtn:hover{
+  transform: scale(0.93);
+}
+
+.Home{
+  padding: 4vh ;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.form-input,
+.form-textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-button:hover {
+  background-color: #218838;
+}
+
+
+.TodoItems{
+  position: relative;
+  display: flex;
+  gap: 3vw;
+  flex-wrap: wrap;
+  
+  
+}
+
+.itemCard{
+  padding: 4vh  2vh;
+  background-color: #fff;
+  width:28%;
+  box-shadow: 3px 3px 4px rgba(160, 156, 156, 0.76);
+}
+
+.itemCard:hover{
+   box-shadow: 5px 5px 10px rgba(88, 86, 86, 0.822);
+}
+
+.itemCard h3{
+  margin: 0px;
+}
+
+.itemCard p{
+  margin-top: 1.4vh;
+}
+
+
+
+.btns{
+  display: flex;
+  justify-content: end;
+  gap:2vw;
+  margin-right: 1vw;
+
+}
+
+.btns button{
+  
+  height: fit-content;
+  padding: 0.7rem;
+  font-size: small;
+}
+
+.binBtn{
+  color: #c82333;
+  transform: scale(2);
+  cursor: pointer;
+}
+
+.PendingItems{
+  position: relative;
+  padding: 4vh ;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4vh;
+  margin-right: 7vw; 
+  margin-bottom: 4vh;
+}
+
+
+.summarizeBtn {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
